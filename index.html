@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEase - Book Your Dream Vacation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TravelEase</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Explore The World With Us</h2>
+                <p>Find and book your perfect trip with expert advice, travel tips, destination information and inspiration from us</p>
+                
+                <div class="search-box">
+                    <div class="search-tabs">
+                        <button class="tab active" data-tab="flights">Flights</button>
+                        <button class="tab" data-tab="hotels">Hotels</button>
+                        <button class="tab" data-tab="packages">Packages</button>
+                    </div>
+                    
+                    <div class="search-form" id="flights-tab">
+                        <div class="form-group">
+                            <label for="from">From</label>
+                            <input type="text" id="from" placeholder="City or Airport">
+                        </div>
+                        <div class="form-group">
+                            <label for="to">To</label>
+                            <input type="text" id="to" placeholder="City or Airport">
+                        </div>
+                        <div class="form-group">
+                            <label for="departure">Departure</label>
+                            <input type="date" id="departure">
+                        </div>
+                        <div class="form-group">
+                            <label for="return">Return</label>
+                            <input type="date" id="return">
+                        </div>
+                        <div class="form-group">
+                            <label for="passengers">Passengers</label>
+                            <select id="passengers">
+                                <option value="1">1 Adult</option>
+                                <option value="2">2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                                <option value="family">Family</option>
+                            </select>
+                        </div>
+                        <button class="search-btn">Search Flights</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-destinations">
+            <h2>Popular Destinations</h2>
+            <p>Explore our most popular travel destinations</p>
+            
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Paris">
+                    <div class="card-content">
+                        <h3>Paris, France</h3>
+                        <p>From $499</p>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1538970272646-f61fabb3bfdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tokyo">
+                    <div class="card-content">
+                        <h3>Tokyo, Japan</h3>
+                        <p>From $899</p>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="New York">
+                    <div class="card-content">
+                        <h3>New York, USA</h3>
+                        <p>From $399</p>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Rome">
+                    <div class="card-content">
+                        <h3>Rome, Italy</h3>
+                        <p>From $599</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Why Choose Us</h2>
+            <p>We offer the best services for your travel needs</p>
+            
+            <div class="features-container">
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <h3>Worldwide Coverage</h3>
+                    <p>We provide services to over 150 countries worldwide</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Best Price Guarantee</h3>
+                    <p>We guarantee the best prices for all our services</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Our support team is available round the clock</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe & Secure</h3>
+                    <p>All your transactions are 100% safe and secure</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <p>Hear from our satisfied customers</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Amazing service! The booking process was so easy and the prices were unbeatable. Will definitely use TravelEase again for my next trip.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                        <h4>Sarah Johnson</h4>
+                        <p>New York, USA</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>I was hesitant to book online, but TravelEase made the process seamless. Their customer support was incredibly helpful when I had questions.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen">
+                        <h4>Michael Chen</h4>
+                        <p>Toronto, Canada</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Found an amazing deal for our honeymoon package. Everything was perfectly arranged and we had the trip of a lifetime. Highly recommended!</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez">
+                        <h4>Emma Rodriguez</h4>
+                        <p>London, UK</p>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest deals and travel inspiration straight to your inbox</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About TravelEase</h3>
+                <p>TravelEase is a leading online travel agency dedicated to providing the best travel experiences at the most competitive prices.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Suite 100, New York, NY 10001</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@travelease.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 TravelEase. All Rights Reserved. | Privacy Policy | Terms & Conditions</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
