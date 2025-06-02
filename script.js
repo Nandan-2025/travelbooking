@@ -1,3 +1,4 @@
+//this is js file
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
